@@ -71,6 +71,7 @@ MALLOC_SVELTE := true
 BOARD_USES_ALSA_AUDIO              := true
 AUDIO_FEATURE_ENABLED_KPI_OPTIMIZE := true
 USE_CUSTOM_AUDIO_POLICY            := 1
+AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
 
 # Display
 # Shader cache config options
