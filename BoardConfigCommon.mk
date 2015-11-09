@@ -151,7 +151,7 @@ BOARD_HARDWARE_CLASS += $(VENDOR_PATH)/cmhw
 include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
-    device/samsung/msm8916-common/sepolicy
+    $(VENDOR_PATH)/sepolicy
 
 # Workaround to avoid issues with legacy liblights on QCOM platforms
 TARGET_PROVIDES_LIBLIGHT := true
@@ -159,3 +159,6 @@ TARGET_PROVIDES_LIBLIGHT := true
 # Camera
 TARGET_PROVIDES_CAMERA_HAL := true
 USE_DEVICE_SPECIFIC_CAMERA := true
+
+# Samsung MSM8916 Dual Sim RIL
+BOARD_RIL_CLASS := $(VENDOR_PATH)/ril/
