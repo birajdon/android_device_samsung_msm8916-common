@@ -169,3 +169,6 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 
 # Samsung MSM8916 Dual Sim RIL
 BOARD_RIL_CLASS := $(VENDOR_PATH)/ril/
+
+# Enable dex-preoptimization to speed up first boot sequence
+WITH_DEXPREOPT := true
