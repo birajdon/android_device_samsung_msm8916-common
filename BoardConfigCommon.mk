@@ -109,6 +109,7 @@ BOARD_CHARGER_ENABLE_SUSPEND  := true
 TARGET_USES_NEW_ION_API            := true
 TARGET_USES_QCOM_BSP               := true
 HAVE_SYNAPTICS_I2C_RMI4_FW_UPGRADE := true
+BOARD_USES_QC_TIME_SERVICES := true
 
 # DataServices
 USE_DEVICE_SPECIFIC_DATASERVICES := true
@@ -168,7 +169,7 @@ TARGET_PROVIDES_CAMERA_HAL := true
 USE_DEVICE_SPECIFIC_CAMERA := true
 
 # Samsung MSM8916 Dual Sim RIL
-BOARD_RIL_CLASS := $(VENDOR_PATH)/ril/
+BOARD_RIL_CLASS := ../../../$(VENDOR_PATH)/ril/
 
 # Enable dex-preoptimization to speed up first boot sequence
 WITH_DEXPREOPT := true
