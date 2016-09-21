@@ -123,7 +123,6 @@ PRODUCT_PACKAGES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
-    dhcpcd.conf \
     hostapd \
     libwpa_client \
     wpa_supplicant \
