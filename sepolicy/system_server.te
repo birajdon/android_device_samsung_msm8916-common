@@ -1,1 +1,5 @@
+# /efs
 allow system_server efs_file:dir search;
+
+# /efs/prox_cal
+allow system_server efs_file:file r_file_perms;
