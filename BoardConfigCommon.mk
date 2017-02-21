@@ -59,7 +59,7 @@ BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
 
 # Malloc Implementation
-MALLOC_IMPL := dlmalloc
+#MALLOC_SVELTE := true
 
 # Audio
 BOARD_USES_ALSA_AUDIO := true
