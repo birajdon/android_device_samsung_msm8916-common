@@ -94,11 +94,11 @@ PRODUCT_PACKAGES += \
     e2fsck \
     make_ext4fs
 
-# FM
-PRODUCT_PACKAGES += \
-    FM2 \
-    libqcomfm_jni \
-    qcom.fmradio
+# FM | TODO: Fix build break
+#PRODUCT_PACKAGES += \
+#    FM2 \
+#    libqcomfm_jni \
+#    qcom.fmradio
     
 # Keystore
 PRODUCT_PACKAGES += \
