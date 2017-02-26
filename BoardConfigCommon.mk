@@ -26,10 +26,18 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno306
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8916
+TARGET_NO_BOOTLOADER         := true
 
 # Architecture
-TARGET_CPU_VARIANT := cortex-a53
-TARGET_CPU_CORTEX_A53 := true
+TARGET_ARCH	        := arm
+TARGET_ARCH_VARIANT     := armv7-a-neon
+TARGET_ARCH_VARIANT_CPU := cortex-a9
+TARGET_CPU_ABI          := armeabi-v7a
+TARGET_CPU_ABI2         := armeabi
+TARGET_CPU_SMP          := true
+TARGET_CPU_VARIANT      := cortex-a7
+TARGET_CPU_VARIANT      := cortex-a53
+TARGET_CPU_CORTEX_A53   := true
 
 # Board CFLAGS
 arch_variant_cflags += -mfpu=neon -mfloat-abi=softfp
