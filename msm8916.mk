@@ -135,6 +135,10 @@ PRODUCT_PACKAGES += \
     libwcnss_qmi \
     wcnss_service
 
+# SamsungDoze
+PRODUCT_PACKAGES += \
+   SamsungDoze
+
 # IRSC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
