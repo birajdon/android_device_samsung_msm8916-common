@@ -21,7 +21,7 @@ VENDOR_PATH := device/samsung/msm8916-common
 TARGET_SPECIFIC_HEADER_PATH := $(VENDOR_PATH)/include
 
 # Platform
-TARGET_BOARD_PLATFORM := msm8916
+TARGET_BOARD_PLATFORM     := msm8916
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno306
 
 # Bootloader
@@ -43,34 +43,34 @@ TARGET_CPU_CORTEX_A53   := true
 arch_variant_cflags += -mfpu=neon -mfloat-abi=softfp
 
 # Kernel
-TARGET_KERNEL_ARCH := arm
-BOARD_DTBTOOL_ARG := -2
-BOARD_KERNEL_BASE := 0x80000000
-BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci androidboot.selinux=permissive
-BOARD_KERNEL_PAGESIZE := 2048
+TARGET_KERNEL_ARCH        := arm
+BOARD_DTBTOOL_ARG         := -2
+BOARD_KERNEL_BASE         := 0x80000000
+BOARD_KERNEL_CMDLINE      := console=null androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci androidboot.selinux=permissive
+BOARD_KERNEL_PAGESIZE     := 2048
 BOARD_KERNEL_SEPARATED_DT := true
-BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
-BOARD_RAMDISK_OFFSET     := 0x02000000
+BOARD_KERNEL_TAGS_OFFSET  := 0x01E00000
+BOARD_RAMDISK_OFFSET      := 0x02000000
 
 # File System
-TARGET_USERIMAGES_USE_EXT4 := true
+TARGET_USERIMAGES_USE_EXT4        := true
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/rootdir/etc/fstab.qcom
 
 # Bluetooth
-BOARD_HAVE_BLUETOOTH := true
+BOARD_HAVE_BLUETOOTH      := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
-BLUETOOTH_HCI_USE_MCT := true
+BLUETOOTH_HCI_USE_MCT     := true
 
 # Malloc Implementation
 MALLOC_SVELTE := true
 
 # Audio
-BOARD_USES_ALSA_AUDIO := true
+BOARD_USES_ALSA_AUDIO              := true
 AUDIO_FEATURE_ENABLED_KPI_OPTIMIZE := true
-USE_CUSTOM_AUDIO_POLICY := 1
+USE_CUSTOM_AUDIO_POLICY            := 1
 
 # Display
 # Shader cache config options
@@ -80,9 +80,9 @@ MAX_EGL_CACHE_KEY_SIZE := 12*1024
 # Maximum GLES shader cache size for each app to store the compiled shader
 # binaries. Decrease the size if RAM or Flash Storage size is a limitation
 # of the device.
-MAX_EGL_CACHE_SIZE := 2048*1024
-NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
-#OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
+MAX_EGL_CACHE_SIZE               := 2048*1024
+NUM_FRAMEBUFFER_SURFACE_BUFFERS  := 3
+#OVERRIDE_RS_DRIVER              := libRSDriver_adreno.so
 TARGET_CONTINUOUS_SPLASH_ENABLED := true
 
 # FM
@@ -96,11 +96,11 @@ TARGET_POWERHAL_VARIANT := qcom
 
 # Charger
 BOARD_CHARGER_SHOW_PERCENTAGE := true
-BOARD_CHARGER_ENABLE_SUSPEND := true
+BOARD_CHARGER_ENABLE_SUSPEND  := true
 
 # Qualcomm support
-TARGET_USES_NEW_ION_API :=true
-TARGET_USES_QCOM_BSP := true
+TARGET_USES_NEW_ION_API            := true
+TARGET_USES_QCOM_BSP               := true
 HAVE_SYNAPTICS_I2C_RMI4_FW_UPGRADE := true
 
 # DataServices
@@ -116,9 +116,9 @@ TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 TARGET_HW_DISK_ENCRYPTION := true
 
 # Vold
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
+TARGET_USE_CUSTOM_LUN_FILE_PATH     := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
 BOARD_VOLD_DISC_HAS_MULTIPLE_MAJORS := true
-BOARD_VOLD_MAX_PARTITIONS := 65
+BOARD_VOLD_MAX_PARTITIONS           := 65
 
 # Wifi
 BOARD_HAS_QCOM_WLAN              := true
