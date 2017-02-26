@@ -38,6 +38,7 @@ TARGET_CPU_SMP          := true
 TARGET_CPU_VARIANT      := cortex-a7
 TARGET_CPU_VARIANT      := cortex-a53
 TARGET_CPU_CORTEX_A53   := true
+ARCH_ARM_HAVE_NEON      := true
 
 # Board CFLAGS
 arch_variant_cflags += -mfpu=neon -mfloat-abi=softfp
