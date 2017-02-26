@@ -83,6 +83,10 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     memtrack.msm8916
 
+# Time
+PRODUCT_PACKAGES += \
+   libtime_genoff
+
 # IPv6 tethering
 PRODUCT_PACKAGES += \
     ebtables \
