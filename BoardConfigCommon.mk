@@ -58,7 +58,12 @@ TARGET_USERIMAGES_USE_EXT4        := true
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # Recovery
+
+ifeq ($(RECOVERY_VARIANT), twrp) 
+TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/rootdir/etc/twrp.fstab
+else
 TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/rootdir/etc/fstab.qcom
+endif
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH      := true
