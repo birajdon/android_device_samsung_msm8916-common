@@ -43,6 +43,9 @@ ARCH_ARM_HAVE_NEON      := true
 # Board CFLAGS
 arch_variant_cflags += -mfpu=neon -mfloat-abi=softfp
 
+# SSL
+BOARD_USES_OPENSSL_SYMBOLS := true # Required by ardeno EGL libs
+
 # Kernel
 TARGET_KERNEL_ARCH        := arm
 BOARD_DTBTOOL_ARG         := -2
